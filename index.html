@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muy Pronto</title>
+    <style>
+        /* General */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #487e88; /* Fondo color teal oscuro */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            background-color: transparent;
+            border: 4px solid rgb(255, 192, 0); /* Borde amarillo dorado */
+            border-radius: 25px;
+            padding: 30px 50px;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        /* Icono */
+        .icon {
+            font-size: 60px;
+            color: rgb(255, 192, 0); /* Icono dorado */
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Título */
+        h1 {
+            font-size: 3.5em;
+            color: rgb(255, 192, 0); /* Texto amarillo dorado */
+            margin: 0;
+            white-space: nowrap; /* No permite que el texto se divida en varias líneas */
+        }
+
+        /* Cuenta regresiva */
+        #countdown {
+            font-size: 1.8em;
+            margin-top: 15px;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 1em;
+            color: white;
+        }
+
+        /* Media Queries para dispositivos móviles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 30px;
+                width: 90%;
+            }
+
+            .icon {
+                font-size: 50px; /* Icono más pequeño en móviles */
+            }
+
+            h1 {
+                font-size: 2.5em; /* Reducir el tamaño de fuente del título */
+            }
+
+            #countdown {
+                font-size: 1.5em; /* Reducir el tamaño de la cuenta regresiva */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em; /* Título aún más pequeño en pantallas muy pequeñas */
+            }
+
+            #countdown {
+                font-size: 1.2em; /* Ajustar la cuenta regresiva */
+            }
+        }
+    </style>
+
+    <!-- Importar iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="icon">
+            <i class="fas fa-cog"></i> <!-- Ícono de tuerca -->
+        </div>
+        <h1>Muy Pronto</h1>
+        <div id="countdown">Tiempo restante: 24h 00m 00s</div>
+    </div>
+
+    <footer>Copyright &copy; Brady Benavides 2024</footer>
+
+    <script>
+        // Cuenta regresiva de 24 horas
+        const countdownElement = document.getElementById('countdown');
+        const countdownTime = new Date().getTime() + 24 * 60 * 60 * 1000;
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeLeft = countdownTime - now;
+
+            const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+            const seconds = Math.floor((timeLeft / 1000) % 60);
+
+            countdownElement.innerHTML = `Tiempo restante: ${hours}h ${minutes}m ${seconds}s`;
+
+            if (timeLeft <= 0) {
+                clearInterval(interval);
+                countdownElement.innerHTML = "¡Lanzamiento!";
+            }
+        }
+
+        const interval = setInterval(updateCountdown, 1000);
+    </script>
+    
+</body>
+</html>
