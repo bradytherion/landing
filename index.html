@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muy Pronto</title>
+    <link rel="icon" href="https://bradybenavides.com/favicon.ico" type="image/x-icon"> <!-- Cambia la URL por tu favicon -->
     <style>
         /* General */
         body {
@@ -60,6 +61,19 @@
             color: white;
         }
 
+        /* Link temporal */
+        #reset-link {
+            display: block;
+            margin-top: 20px;
+            color: rgb(255, 192, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #reset-link:hover {
+            text-decoration: underline;
+        }
+
         /* Media Queries para dispositivos móviles */
         @media (max-width: 768px) {
             .container {
@@ -102,12 +116,14 @@
         </div>
         <h1>Muy Pronto</h1>
         <div id="countdown">Tiempo restante: 24h 00m 00s</div>
+        <a id="reset-link" href="#">Restablecer tiempo</a>
     </div>
 
     <footer>Copyright &copy; Brady Benavides 2024</footer>
 
     <script>
         const countdownElement = document.getElementById('countdown');
+        const resetLink = document.getElementById('reset-link');
         const now = new Date().getTime();
         const storedEndTime = localStorage.getItem('endTime');
 
@@ -144,6 +160,14 @@
 
         // Actualizar cada segundo
         const interval = setInterval(updateCountdown, 1000);
+
+        // Reiniciar el temporizador al hacer clic en el enlace
+        resetLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            countdownTime = new Date().getTime() + 24 * 60 * 60 * 1000; // 24 horas desde ahora
+            localStorage.setItem('endTime', countdownTime);
+            updateCountdown();
+        });
     </script>
 </body>
 </html>
