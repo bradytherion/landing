@@ -107,11 +107,25 @@
     <footer>Copyright &copy; Brady Benavides 2024</footer>
 
     <script>
-        // Calcular la fecha de finalización (24 horas desde ahora)
-        const now = new Date(); // Fecha y hora actual
-        const countdownTime = now.getTime() + 24 * 60 * 60 * 1000; // Sumar 24 horas
-
         const countdownElement = document.getElementById('countdown');
+        const now = new Date().getTime();
+        const storedEndTime = localStorage.getItem('endTime');
+
+        let countdownTime;
+
+        // Verificar si hay un tiempo almacenado
+        if (storedEndTime) {
+            countdownTime = parseInt(storedEndTime);
+            // Si el tiempo almacenado ya pasó, reiniciar para 24 horas
+            if (countdownTime <= now) {
+                countdownTime = now + 24 * 60 * 60 * 1000;
+                localStorage.setItem('endTime', countdownTime);
+            }
+        } else {
+            // Si no hay tiempo almacenado, establecer uno nuevo
+            countdownTime = now + 24 * 60 * 60 * 1000;
+            localStorage.setItem('endTime', countdownTime);
+        }
 
         function updateCountdown() {
             const currentTime = new Date().getTime();
@@ -126,11 +140,4 @@
                 countdownElement.innerHTML = "¡Lanzamiento!";
                 clearInterval(interval);
             }
-        }
-
-        // Actualizar cada segundo
-        const interval = setInterval(updateCountdown, 1000);
-    </script>
-    
-</body>
-</html>
+      
