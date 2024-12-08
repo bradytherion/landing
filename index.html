@@ -107,26 +107,28 @@
     <footer>Copyright &copy; Brady Benavides 2024</footer>
 
     <script>
-        // Cuenta regresiva de 24 horas
+        // Calcular la fecha de finalización (24 horas desde ahora)
+        const now = new Date(); // Fecha y hora actual
+        const countdownTime = now.getTime() + 24 * 60 * 60 * 1000; // Sumar 24 horas
+
         const countdownElement = document.getElementById('countdown');
-        const countdownTime = new Date().getTime() + 24 * 60 * 60 * 1000;
 
         function updateCountdown() {
-            const now = new Date().getTime();
-            const timeLeft = countdownTime - now;
+            const currentTime = new Date().getTime();
+            const timeLeft = countdownTime - currentTime;
 
-            const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
-            const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
-            const seconds = Math.floor((timeLeft / 1000) % 60);
-
-            countdownElement.innerHTML = `Tiempo restante: ${hours}h ${minutes}m ${seconds}s`;
-
-            if (timeLeft <= 0) {
-                clearInterval(interval);
+            if (timeLeft > 0) {
+                const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+                const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+                const seconds = Math.floor((timeLeft / 1000) % 60);
+                countdownElement.innerHTML = `Tiempo restante: ${hours}h ${minutes}m ${seconds}s`;
+            } else {
                 countdownElement.innerHTML = "¡Lanzamiento!";
+                clearInterval(interval);
             }
         }
 
+        // Actualizar cada segundo
         const interval = setInterval(updateCountdown, 1000);
     </script>
     
