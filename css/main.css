@@ -3641,7 +3641,7 @@ form textarea:required:valid {
   height: 100%;
   padding: 3rem;
   background-color: var(--base);
-  border: 1px solid var(--stroke-elements);
+  border: 4px solid #ffc000;
   -moz-border-radius: var(--_radius-xl);
        border-radius: var(--_radius-xl);
   text-align: center;
