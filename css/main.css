@@ -1212,8 +1212,6 @@ p.additional-text a {
 
 .btn-hover-accent::before {
   background: var(--accent);
-  background: -moz-linear-gradient(315deg, var(--accent) 0%, var(--secondary) 100%);
-  background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
 }
 .btn-hover-accent i, .btn-hover-accent span {
   text-shadow: 0 0 var(--t-opp-bright), 0 5rem var(--t-opp-bright);
@@ -1234,15 +1232,10 @@ p.additional-text a {
 
 .btn-accent {
   background: var(--accent);
-  background: -moz-linear-gradient(315deg, var(--accent) 0%, var(--secondary) 100%);
-  background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
-  color: var(--t-opp-bright);
 }
 
 .btn-hover-accent-mobile::before {
   background: var(--accent);
-  background: -moz-linear-gradient(315deg, var(--accent) 0%, var(--secondary) 100%);
-  background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
 }
 .btn-hover-accent-mobile i, .btn-hover-accent-mobile span {
   color: var(--t-opp-bright);
@@ -1276,9 +1269,6 @@ p.additional-text a {
 
 .btn-accent-mobile {
   background: var(--accent);
-  background: -moz-linear-gradient(315deg, var(--accent) 0%, var(--secondary) 100%);
-  background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
-  color: var(--t-opp-bright);
 }
 @media only screen and (min-width: 992px) {
   .btn-accent-mobile {
@@ -2777,8 +2767,6 @@ form textarea:required:valid {
   width: 100%;
   height: 100%;
   background: var(--accent);
-  background: -moz-linear-gradient(315deg, var(--accent) 0%, var(--secondary) 100%);
-  background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
   -moz-border-radius: 2rem;
        border-radius: 2rem;
   -webkit-transform: scale3d(1, 1, 1);
@@ -4073,8 +4061,6 @@ form textarea:required:valid {
   width: 10px;
   background-color: var(--accent);
   background: var(--accent);
-  background: -moz-linear-gradient(315deg, var(--accent) 0%, var(--secondary) 100%);
-  background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
 }
 
 .swiper-testimonials {
