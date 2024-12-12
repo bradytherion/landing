@@ -367,7 +367,7 @@ img {
 .components__item {
   position: relative;
   padding: 4rem 10%;
-  border-bottom: 1px solid var(--stroke-elements);
+  border-bottom: 4px solid #ffc000;
 }
 
 .components__caption {
@@ -607,7 +607,7 @@ h1 {
   padding: 0 1.4rem;
   -moz-border-radius: var(--_radius-s);
        border-radius: var(--_radius-s);
-  border: 1px solid var(--stroke-elements);
+  border: 4px solid #ffc000;
   background-color: var(--base);
   font: normal 700 1.3rem/3.3rem var(--_font-default);
   margin-bottom: 1rem;
@@ -774,7 +774,7 @@ h2 {
   padding: 0 1.4rem;
   -moz-border-radius: var(--_radius-s);
        border-radius: var(--_radius-s);
-  border: 1px solid var(--stroke-elements);
+  border: 4px solid #ffc000;
   background-color: var(--base);
   font: normal 700 1.3rem/1 var(--_font-default);
   margin-bottom: 0.7rem;
@@ -1015,7 +1015,7 @@ p.additional-text a {
 }
 .rounded-tag.tag-outline {
   background-color: transparent;
-  border: 1px solid var(--stroke-elements);
+  border: 4px solid #ffc000;
   color: var(--t-medium);
 }
 
@@ -2968,7 +2968,7 @@ form textarea:required:valid {
   width: 100%;
   height: 100%;
   background-color: var(--base-tint);
-  border: 1px solid var(--stroke-elements);
+  border: 4px solid #ffc000;
   -moz-border-radius: var(--_radius-xl);
        border-radius: var(--_radius-xl);
 }
@@ -3203,7 +3203,7 @@ form textarea:required:valid {
 .contact-lines__item {
   padding-top: 4.3rem;
   padding-bottom: 4.2rem;
-  border-top: 1px solid var(--stroke-elements);
+  border-top: 4px solid #ffc000;
 }
 @media only screen and (min-width: 768px) {
   .contact-lines__item {
@@ -3599,7 +3599,7 @@ form textarea:required:valid {
 .numblock {
   padding: 1rem 1.25rem;
   margin-right: 1rem;
-  border: 1px solid var(--stroke-elements);
+  border: 4px solid #ffc000;
   background-color: var(--base);
   -moz-border-radius: var(--_radius-s);
        border-radius: var(--_radius-s);
@@ -3928,7 +3928,7 @@ form textarea:required:valid {
 .testimonials-card {
   padding: 3rem;
   background-color: var(--base);
-  border: 1px solid var(--stroke-elements);
+  border: 4px solid #ffc000;
   -moz-border-radius: var(--_radius-xl);
        border-radius: var(--_radius-xl);
 }
@@ -4134,7 +4134,7 @@ form textarea:required:valid {
   width: 100%;
   padding: 3rem;
   background-color: var(--base);
-  border: 1px solid var(--stroke-elements);
+  border: 4px solid #ffc000;
   -moz-border-radius: var(--_radius-xl);
        border-radius: var(--_radius-xl);
   text-align: center;
