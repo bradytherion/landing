@@ -570,7 +570,6 @@ h1 {
   font: normal 700 3.8rem/1.2 var(--_font-accent);
   color: var(--t-accent);
   background: var(--t-accent);
-  background: -webkit-linear-gradient(15deg, var(--t-accent) 0%, var(--t-secondary) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -735,7 +734,6 @@ h2 {
   font: normal 700 3.4rem/1.2 var(--_font-accent);
   color: var(--t-accent);
   background: var(--t-accent);
-  background: -webkit-linear-gradient(15deg, var(--t-accent) 0%, var(--t-secondary) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -3180,7 +3178,6 @@ form textarea:required:valid {
   font: normal 700 2.6rem/1.2 var(--_font-default);
   font-variant-numeric: lining-nums;
   background: var(--t-accent);
-  background: -webkit-linear-gradient(15deg, var(--t-accent) 0%, var(--t-secondary) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -3655,7 +3652,6 @@ form textarea:required:valid {
   letter-spacing: -0.2rem;
   font-variant-numeric: lining-nums;
   background: var(--t-accent);
-  background: -webkit-linear-gradient(15deg, var(--t-accent) 0%, var(--t-secondary) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -4017,7 +4013,6 @@ form textarea:required:valid {
   margin-right: 0.8rem;
   font-size: 1.8rem;
   background: var(--t-accent);
-  background: -webkit-linear-gradient(15deg, var(--t-accent) 0%, var(--t-secondary) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
