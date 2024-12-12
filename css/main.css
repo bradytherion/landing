@@ -78,40 +78,41 @@
   --base--light: #e6ebf4;
   --base-tint--light: #ebf0f7;
   --base-shade--light: #bdc1c8;
-  --accent--light: #aa70e0;
+  --accent--light: rgb(255,192,0); /* Cambiado para botones */
   --secondary--light: #7059e2;
   --secondary-rgba--light: rgba(112,89,226,0.3);
   --stroke-controls--light: #a8b0c1;
   --stroke-controls-neutral--light: rgba(0,0,0,0.3);
   --stroke-elements--light: #d1d5e0;
-  --t-bright--light: #22232c;
+  --t-bright--light: rgb(255,252,247); /* Cambiado para texto */
   --t-medium--light: #424550;
   --t-muted--light: #666a79;
-  --t-accent--light: #8f56cc;
+  --t-accent--light: rgb(255,192,0); /* Color énfasis */
   --t-secondary--light: #5d4ec4;
   --t-disabled--light: #717586;
   --t-placeholder--light: #969bb2;
-  --base-opp--light: #111111;
+  --base-opp--light: rgb(73,127,137); /* Fondo modificado */
   --t-opp-bright--light: #ebf0f7;
   --t-opp-medium--light: #C7C6D3;
   --t-opp-muted--light: #A1A1AF;
   --gradient-one--light: #CEC4EF;
   --gradient-two--light: #f5c5cd;
   --gradient-three--light: #ac8fe3;
-  /* dark color scheme */
-  --base--dark: #111111;
+
+/* dark color scheme */
+  --base--dark: rgb(73,127,137); /* Fondo modificado */
   --base-tint--dark: #161616;
   --base-shade--dark: #000000;
-  --accent--dark: #E4B8BF;
+  --accent--dark: rgb(255,192,0); /* Botones */
   --secondary--dark: #CEC4EF;
   --secondary-rgba--dark: rgba(206,196,239,0.2);
   --stroke-controls--dark: #4B4B51;
   --stroke-controls-neutral--dark: rgba(255,255,255,0.3);
   --stroke-elements--dark: #303033;
-  --t-bright--dark: #e9e9f1;
+  --t-bright--dark: rgb(255,252,247); /* Texto */
   --t-medium--dark: #C7C6D3;
   --t-muted--dark: #A1A1AF;
-  --t-accent--dark: #E1BAC5;
+  --t-accent--dark: rgb(255,192,0); /* Énfasis */
   --t-secondary--dark: #CEC4EF;
   --t-disabled--dark: #8B8A91;
   --t-placeholder--dark: #58585E;
@@ -122,11 +123,12 @@
   --gradient-one--dark: #a287d5;
   --gradient-two--dark: #E4B8BF;
   --gradient-three--dark: #8b6bc5;
-  /* permanent colors */
-  --per-base: #111111;
+
+/* permanent colors */
+  --per-base: rgb(73,127,137); /* Fondo permanente */
   --per-base-tint: #212121;
   --per-stroke-controls: rgba(255,255,255,0.4);
-  --t-per-bright-light: #ffffff;
+  --t-per-bright-light: rgb(255,252,247); /* Texto permanente */
   --t-per-medium-light: #f2f2f2;
   --t-per-muted-light: #C7C6D3;
   --t-per-bright-dark: #27293b;
@@ -2976,8 +2978,6 @@ form textarea:required:valid {
   width: 100%;
   height: 100%;
   padding: 3rem;
- gap: 0; /* Reduce el espacio entre bloques internos */
-  height: 70%; /* Ajusta la altura automáticamente */
 }
 .avatar__container::before {
   content: "";
