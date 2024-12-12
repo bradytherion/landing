@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
 
     <!-- Título de la Página -->
-    <title>Brady Benavides - Editor Audiovisual</title>
+    <title>Brady Benavides - Portfolio y Currículum</title>
 
     <!-- Meta Tags -->
-    <meta name="description" content="Brady Benavides - Editor audiovisual en Lima, Perú.">
-    <meta name="keywords" content="editor audiovisual, portfolio, currículum, video, Lima, Perú">
+    <meta name="description" content="Brady Benavides - Audiovisual editor in Lima, Peru.">
+    <meta name="keywords" content="audiovisual editor, portfolio, curriculum, video, Lima, Peru">
     <meta name="author" content="Brady Benavides">
 
     <!-- Viewport Meta -->
@@ -38,7 +38,12 @@
   <body>
 
     <!-- Loader -->
-   
+    <div id="loader" class="loader">
+      <div id="loaderContent" class="loader__content">
+        <div class="loader__shadow"></div>
+        <div class="loader__box"></div>
+      </div>
+    </div>
 
     <!-- Encabezado -->
     <header id="header" class="header d-flex justify-content-between">
@@ -49,31 +54,31 @@
           <ul class="menu__list d-flex justify-content-start">
             <li class="menu__item">
               <a class="menu__link btn" href="#home">
-                <span class="menu__caption">Inicio</span>
+                <span class="menu__caption">Home</span>
                 <i class="ph-bold ph-house-simple"></i>
               </a>
             </li>
             <li class="menu__item">
               <a class="menu__link btn" href="#portfolio">
-                <span class="menu__caption">Portafolio</span>
+                <span class="menu__caption">Portfolio</span>
                 <i class="ph-bold ph-squares-four"></i>
               </a>
             </li>
             <li class="menu__item">
               <a class="menu__link btn" href="#about">
-                <span class="menu__caption">Sobre Mí</span>
+                <span class="menu__caption">About Me</span>
                 <i class="ph-bold ph-user"></i>
               </a>
             </li>
             <li class="menu__item">
               <a class="menu__link btn" href="#resume">
-                <span class="menu__caption">Currículum</span>
+                <span class="menu__caption">Resume</span>
                 <i class="ph-bold ph-article"></i>
               </a>
             </li>
             <li class="menu__item">
               <a class="menu__link btn" href="#contact">
-                <span class="menu__caption">Contacto</span>
+                <span class="menu__caption">Contact</span>
                 <i class="ph-bold ph-envelope"></i>
               </a>
             </li>
@@ -83,9 +88,9 @@
 
       <!-- Controles del Encabezado -->
       <div class="header__controls d-flex justify-content-end">
-        <button id="color-switcher" class="color-switcher header__switcher btn" type="button" role="switch" aria-label="modo claro/oscuro" aria-checked="true"></button>
-        <a id="notify-trigger" class="header__trigger btn" href="mailto:info@bradybenavides.com?subject=Mensaje%20desde%20tu%20sitio">
-          <span class="trigger__caption">Contacto!</span>
+        <button id="color-switcher" class="color-switcher header__switcher btn" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
+        <a id="notify-trigger" class="header__trigger btn" href="mailto:info@bradybenavides.com?subject=Message%20from%20your%20site">
+          <span class="trigger__caption">Let's Talk</span>
           <i class="ph-bold ph-chat-dots"></i>
         </a>
       </div>
@@ -104,15 +109,15 @@
             </div>
           </div>
           <div class="avatar__image">
-            <img src="https://dummyimage.com/1024x1024/4d4d4d/636363" alt="Foto de Brady Benavides">
+            <img src="https://dummyimage.com/1024x1024/4d4d4d/636363" alt="Photo of Brady Benavides">
           </div>
         </div>
 
         <!-- Bloque de Localización -->
         <div class="avatar__block">
           <h6>
-            <small class="top">Ubicado en:</small>
-            Lima, Perú
+            <small class="top">Based in:</small>
+            Lima, Peru
           </h6>
         </div>
 
@@ -130,7 +135,7 @@
           </div>
           <div class="avatar__btnholder">
             <a class="btn btn-default btn-fullwidth btn-hover btn-hover-accent" href="#contact" target="_blank">
-              <span class="btn-caption">¡Trabajemos juntos!</span>
+              <span class="btn-caption">Let's Work Together!</span>
             </a>
           </div>
         </div>
