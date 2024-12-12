@@ -2976,6 +2976,8 @@ form textarea:required:valid {
   width: 100%;
   height: 100%;
   padding: 3rem;
+ gap: 0; /* Reduce el espacio entre bloques internos */
+  height: 70%; /* Ajusta la altura automáticamente */
 }
 .avatar__container::before {
   content: "";
