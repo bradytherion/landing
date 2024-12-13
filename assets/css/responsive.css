@@ -45,7 +45,7 @@ Version      : 1.0
     }
 
     .main-menu .mobile-logo img {
-        width: 75px;
+        width: 40px;
     }
 
     .section-title p {
@@ -140,6 +140,7 @@ Version      : 1.0
 
     .single-page-hero-area {
         padding-top: 130px;
+        padding-bottom: 80px;
     }
 
     .single-page-hero-area h2 {
@@ -252,7 +253,7 @@ Version      : 1.0
     }
 
     .main-menu .mobile-logo img {
-        width: 75px;
+        width: 40px;
     }
 
     .about-social {
