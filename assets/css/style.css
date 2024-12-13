@@ -1088,7 +1088,7 @@ html {
 }
 
 .main-menu .navbar-header .navbar-toggle .icon-bar {
-    background: var(--main-color);
+    background: rgb(255 255 255);
     height: 4px;
     width: 30px;
     display: block;
