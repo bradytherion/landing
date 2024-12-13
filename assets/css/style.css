@@ -941,7 +941,7 @@ html {
     position: fixed;
     -webkit-animation: easeIn 1s;
     animation: easeIn 1s;
-    background: rgb(255,192,0);
+    background: rgb(72 126 136);
     border-bottom: 1px dashed rgba(119, 119, 125, .2);
 }
 
